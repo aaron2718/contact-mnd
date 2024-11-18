@@ -1,0 +1,5 @@
+#!/usr/bin/dash
+
+echo "Type in a search pattern for your contacts!"
+read pattern
+awk -v pat="$pattern" 'BEGIN { RS = "###" } tolower($0) ~ tolower(pat)' ~/contacts.txt

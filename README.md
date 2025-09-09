@@ -1,5 +1,8 @@
 # contact-mnd
-A minimalist Dash script to search contacts
+This is a minimalist Dash script to search for your contacts.
+
+Be aware that the provided "Shebang" could not work.
+In that case switch it to ```#!/bin/dash``` or to ```#!/bin/sh``` if that is linked to ```/bin/dash```!
 
 Insert your path to the contact text file at the end of line 5.
 The file might look like the following example:
@@ -17,3 +20,4 @@ Phone: 09876 5432198
   
 ###
 ```
+

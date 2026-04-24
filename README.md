@@ -1,23 +1,23 @@
-# contact-mnd
-This is a minimalist Dash script to search for your contacts.
+# Contact Search Script
+A simple POSIX-compliant shell script that uses ```awk``` to search through your contacts.
 
-Be aware that the provided "Shebang" could not work.
-In that case switch it to ```#!/bin/dash``` or to ```#!/bin/sh``` if that is linked to ```/bin/dash```!
+## How It Works
+* The script asks the user to input a search term.
+* It reads from ```~/contacts.txt```.
+* Each contact entry is assumed to be separated by ``###```.
+* It performs a case-insensitive match against the entire record.
+* Matching records are printed to the terminal.
 
-Insert your path to the contact text file at the end of line 5.
-The file might look like the following example:
+## Expected File Format
+
 ```
 ###  
-  
 Tim Taylor  
 Address: Street 1, Berlin  
 Phone: 01234 5678912  
-  
 ###  
-  
 Sam Smith  
 Phone: 09876 5432198 
-  
 ###
 ```
 

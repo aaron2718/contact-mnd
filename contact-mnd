@@ -1,4 +1,4 @@
-#!/usr/bin/dash
+#!/bin/dash
 
 echo "Type in a search pattern for your contacts!"
 read pattern
